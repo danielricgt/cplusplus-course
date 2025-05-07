@@ -50,7 +50,8 @@ int greaterNumber (int a, int b, int c){
 }
 
 int main()
- 
+// main function
+
 {
 
 // calling the function sum
