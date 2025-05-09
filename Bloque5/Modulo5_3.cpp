@@ -11,8 +11,15 @@ int main()
     {
         cout << numbers[i] << endl;
     }
-    cout << "the sum of the values is: " << numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9] << endl;
-    
+    cout << "the average of the values is: " << (numbers[0] + numbers[1] + numbers[2] + numbers[3] + numbers[4] + numbers[5] + numbers[6] + numbers[7] + numbers[8] + numbers[9]) / 10 << endl;
+
+    if (numbers[0] >= numbers[1] && numbers[0] >= numbers[2] && numbers[0] >= numbers[3] && numbers[0] >= numbers[4] && numbers[0] >= numbers[5] && numbers[0] >= numbers[6] && numbers[0] >= numbers[7] && numbers[0] >= numbers[8] && numbers[0] >= numbers[9])
+    {
+      cout << "higest number is "  <<numbers[0];
+    }
+    else {
+        cout << "another number is highest" << endl;
+    }
 
     return 0;
 }
