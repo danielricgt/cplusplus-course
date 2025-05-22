@@ -11,8 +11,9 @@ using namespace std;
 
     }
 
-    void showCarathers();
+void showCarathers(const char* str);  // Declaración correcta
 
+char name[] = "DANIEL";
 
 int main () {
 
@@ -23,7 +24,7 @@ for (int i = 0; i < 5; i++)
 {
     cout << numbers[i] << " " ;
 }
-showCarathers();
+showCarathers(name);
 
 return 0;
 
@@ -31,7 +32,6 @@ return 0;
 
 // we also can manipulate char chains with pointers
 
-char name[] = "DANIEL";
 char* str = name;
 void showCarathers ( const char* str ) {
     while (*str != '\0')
