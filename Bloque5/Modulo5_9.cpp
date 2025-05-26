@@ -9,11 +9,11 @@ using namespace std;
         {
            for (int j =0 ; j< tam - 1 -i ; j++)
            {
-            if (arr[j]> arr[j+1])
+            if (*(arr +j )> *(arr + j+1))
             {
-                aux = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j]= aux; 
+                aux = *(arr+j+1);
+                *(arr+ j+1) = *(arr+j);
+                *(arr+j)= aux; 
             }
            }
            
